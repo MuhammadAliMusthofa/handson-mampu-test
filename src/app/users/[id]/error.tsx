@@ -12,14 +12,12 @@ interface ErrorBoundaryProps {
 
 export default function UserDetailError({ error, reset }: ErrorBoundaryProps) {
   useEffect(() => {
-    // Log to error reporting service
     console.error("[UserDetail Error]", error);
   }, [error]);
 
   return (
     <main className="min-h-screen flex items-center justify-center px-4">
       <div className="text-center max-w-md animate-fade-in-up">
-        {/* Icon */}
         <div className="mb-8 mx-auto size-24 rounded-full bg-red-500/10 border border-red-500/30 flex items-center justify-center">
           <AlertTriangle className="size-12 text-red-400" aria-hidden="true" />
         </div>

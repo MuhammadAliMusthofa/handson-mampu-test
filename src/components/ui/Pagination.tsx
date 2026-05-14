@@ -1,6 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/Button";
+import { Button } from "./Button";
+
 
 interface PaginationProps {
   currentPage: number;
@@ -9,7 +10,6 @@ interface PaginationProps {
 }
 
 export function Pagination({ currentPage, totalPages, onPageChange }: PaginationProps) {
-  // Kalau halamannya cuma 1 atau kosong, gak usah di-render
   if (totalPages <= 1) return null;
 
   return (

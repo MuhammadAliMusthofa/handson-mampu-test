@@ -5,7 +5,6 @@ export default function UserNotFound() {
   return (
     <main className="min-h-screen flex items-center justify-center px-4">
       <div className="text-center max-w-md animate-fade-in-up">
-        {/* Illustration */}
         <div className="mb-8 mx-auto size-24 rounded-full bg-slate-800 border border-slate-700/50 flex items-center justify-center">
           <UserX className="size-12 text-slate-500" aria-hidden="true" />
         </div>

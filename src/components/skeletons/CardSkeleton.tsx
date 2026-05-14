@@ -10,7 +10,6 @@ export function CardSkeleton() {
           key={i}
           className="rounded-2xl border border-slate-700/50 bg-slate-800/60 p-5 space-y-4"
         >
-          {/* Avatar + name */}
           <div className="flex items-center gap-3">
             <div className="skeleton size-10 rounded-full" />
             <div className="flex-1 space-y-2">
@@ -18,9 +17,7 @@ export function CardSkeleton() {
               <div className="skeleton h-3 w-1/2 rounded" />
             </div>
           </div>
-          {/* Email */}
           <div className="skeleton h-3 w-full rounded" />
-          {/* Badges */}
           <div className="flex gap-2">
             <div className="skeleton h-6 w-16 rounded-full" />
             <div className="skeleton h-6 w-16 rounded-full" />
